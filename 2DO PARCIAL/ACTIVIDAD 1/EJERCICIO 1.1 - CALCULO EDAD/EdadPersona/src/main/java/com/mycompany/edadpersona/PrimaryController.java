@@ -1,11 +1,10 @@
 package com.mycompany.edadpersona;
-
-import java.io.IOException;
+ 
+import java.time.LocalDate; //da la fecha del sistema
 import javafx.fxml.FXML;
-import java.time.LocalDate; //Obtiene la fecha del sistema
-import javafx.scene.control.Label;
+import javafx.scene.control.Label; 
 import javafx.scene.control.TextField;
-
+ 
 public class PrimaryController {
  
     // Cada atributo se enlaza con el fx:id que tiene en el archivo FXML
