@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.desglosedinero.PrimaryController">
+    <children>
+        <HBox alignment="CENTER" spacing="20.0">
+            <Label text="Dinero:" />
+            <TextField fx:id="txtCantidad" alignment="CENTER_RIGHT" />
+            <Button fx:id="btnBorrar" text="X" onAction="#limpiar" />
+            <Button fx:id="btnDesglosar" text="Desglosar" onAction="#desglosar" />
+        </HBox>
+        <HBox alignment="CENTER" spacing="15.0">
+            <TextArea fx:id="txtBilletes" editable="false" prefColumnCount="14" prefRowCount="9" />
+            <TextArea fx:id="txtCantidadBilletes" editable="false" prefColumnCount="14" prefRowCount="9" />
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
